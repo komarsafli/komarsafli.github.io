@@ -1,304 +1,292 @@
 
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
-
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#174b35">
 
-<title>روستای کمارسفلی | معرفی، تصاویر و اخبار</title>
+  <meta name="google-site-verification" content="Ij03cc5FN4_4pJhQKj1goHRRdwbEuYthmKFAuASVt6A">
 
-<meta name="description" content="وب‌سایت معرفی روستای کمارسفلی؛ آشنایی با طبیعت، فرهنگ، تاریخ، تصاویر و اخبار محلی.">
+  <meta name="description" content="معرفی روستای کمارسفلی، طبیعت زیبا، فرهنگ، تصاویر و اخبار روستا">
 
-<meta name="google-site-verification" content="Ij03cc5FN4_4pJhQKj1goHRRdwbEuYthmKFAuASVt6A">
+  <title>روستای کمارسفلی | معرفی، تصاویر و اخبار</title>
 
-<meta name="theme-color" content="#174b35">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-<style>
-* {
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-}
+    html {
+      scroll-behavior: smooth;
+    }
 
-body {
-  margin: 0;
-  font-family: Tahoma, Arial, sans-serif;
-  background: #f4f7f2;
-  color: #26382d;
-  line-height: 2;
-}
+    body {
+      font-family: Tahoma, Arial, sans-serif;
+      background: #f4f8f5;
+      color: #24352b;
+      line-height: 2;
+    }
 
-header {
-  background: #174b35;
-  color: white;
-  padding: 25px 15px;
-  text-align: center;
-}
+    header {
+      background: #174b35;
+      color: white;
+      padding: 22px 15px;
+      text-align: center;
+    }
 
-header h1 {
-  margin: 0;
-  font-size: 30px;
-}
+    header h1 {
+      font-size: 27px;
+      margin-bottom: 5px;
+    }
 
-header p {
-  margin: 5px 0 0;
-  color: #dcebdc;
-}
+    header p {
+      color: #d5eadb;
+      font-size: 14px;
+    }
 
-nav {
-  background: #246447;
-  padding: 12px 5px;
-  text-align: center;
-  position: sticky;
-  top: 0;
-  z-index: 10;
-}
+    nav {
+      background: #103b29;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 8px;
+      padding: 12px 8px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
 
-nav a {
-  color: white;
-  text-decoration: none;
-  margin: 0 9px;
-  font-size: 14px;
-  display: inline-block;
-  transition: color 0.2s;
-}
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 7px 12px;
+      border-radius: 7px;
+      font-size: 13px;
+    }
 
-nav a:hover {
-  color: #f3d58c;
-}
+    nav a:hover {
+      background: #2d704e;
+    }
 
-.hero {
-  background: linear-gradient(135deg, #dcebd7, #b7d6b5);
-  text-align: center;
-  padding: 65px 20px;
-}
+    .hero {
+      min-height: 300px;
+      background: linear-gradient(135deg, #174b35, #47875c);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 35px 18px;
+    }
 
-.hero h2 {
-  color: #174b35;
-  font-size: 30px;
-  margin: 0 0 10px;
-}
+    .hero h2 {
+      font-size: 29px;
+      margin-bottom: 12px;
+    }
 
-.hero p {
-  max-width: 650px;
-  margin: auto;
-}
+    .hero p {
+      max-width: 650px;
+      margin: auto;
+      color: #e5f3e9;
+    }
 
-section {
-  max-width: 1050px;
-  margin: auto;
-  padding: 35px 18px;
-}
+    .container {
+      width: 92%;
+      max-width: 1000px;
+      margin: 28px auto;
+    }
 
-h2.section-title {
-  color: #246447;
-  border-right: 5px solid #d4a84e;
-  padding-right: 12px;
-  margin-bottom: 20px;
-}
+    .section {
+      background: white;
+      padding: 23px;
+      margin-bottom: 22px;
+      border-radius: 14px;
+      box-shadow: 0 3px 14px rgba(0,0,0,0.06);
+    }
 
-.card {
-  background: white;
-  border-radius: 15px;
-  padding: 22px;
-  margin-bottom: 18px;
-  box-shadow: 0 3px 12px #0000000d;
-}
+    .section h2 {
+      color: #174b35;
+      font-size: 21px;
+      margin-bottom: 13px;
+      border-right: 4px solid #4b9b69;
+      padding-right: 10px;
+    }
 
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 18px;
-  align-items: start;
-}
+    .section p {
+      font-size: 15px;
+      color: #46564b;
+    }
 
-.gallery .card {
-  min-width: 0;
-}
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 15px;
+    }
 
-.gallery a {
-  display: block;
-  overflow: hidden;
-  border-radius: 14px;
-}
+    .gallery a {
+      display: block;
+      overflow: hidden;
+      border-radius: 11px;
+      background: #e8eee9;
+    }
 
-.gallery img {
-  width: 100%;
-  height: 230px;
-  object-fit: cover;
-  border-radius: 14px;
-  display: block;
-  transition: transform 0.3s ease;
-}
+    .gallery img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.3s;
+    }
 
-.gallery a:hover img {
-  transform: scale(1.04);
-}
+    .gallery a:hover img {
+      transform: scale(1.04);
+    }
 
-.caption {
-  text-align: center;
-  color: #42634d;
-  margin: 8px 0 0;
-}
+    .news-item {
+      padding: 12px 0;
+      border-bottom: 1px solid #e8eee9;
+    }
 
-footer {
-  background: #174b35;
-  color: white;
-  text-align: center;
-  padding: 25px 12px;
-  margin-top: 30px;
-}
+    .news-item:last-child {
+      border-bottom: none;
+    }
 
-footer p {
-  margin: 5px;
-}
+    footer {
+      background: #103b29;
+      color: white;
+      text-align: center;
+      padding: 22px 12px;
+      font-size: 13px;
+      margin-top: 35px;
+    }
 
-@media(max-width: 500px) {
-  header h1 {
-    font-size: 24px;
-  }
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 23px;
+      }
 
-  .hero {
-    padding: 45px 16px;
-  }
+      .hero h2 {
+        font-size: 23px;
+      }
 
-  .hero h2 {
-    font-size: 24px;
-  }
+      .section {
+        padding: 17px;
+      }
 
-  nav a {
-    margin: 0 5px;
-    font-size: 12px;
-  }
+      .gallery {
+        grid-template-columns: 1fr;
+      }
 
-  .gallery {
-    grid-template-columns: 1fr;
-  }
-
-  .gallery img {
-    height: 220px;
-  }
-}
-</style>
+      .gallery img {
+        height: 210px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<header>
-  <h1>🌿 روستای کمارسفلی</h1>
-  <p>وب‌سایت معرفی روستا</p>
-</header>
+  <header>
+    <h1>روستای کمارسفلی</h1>
+    <p>طبیعت، فرهنگ و زندگی روستایی</p>
+  </header>
 
-<nav aria-label="منوی اصلی">
-  <a href="#home">صفحه اصلی</a>
-  <a href="#about">معرفی روستا</a>
-  <a href="#nature">طبیعت</a>
-  <a href="#culture">فرهنگ</a>
-  <a href="#news">اخبار</a>
-</nav>
+  <nav>
+    <a href="#home">صفحه اصلی</a>
+    <a href="#about">درباره روستا</a>
+    <a href="#nature">طبیعت و تصاویر</a>
+    <a href="#culture">فرهنگ</a>
+    <a href="#news">اخبار</a>
+  </nav>
 
-<main>
-
-<div class="hero" id="home">
-  <h2>به کمارسفلی خوش آمدید</h2>
-  <p>
-    به وب‌سایت روستای کمارسفلی خوش آمدید.
-    اینجا فضایی برای معرفی روستا، نمایش تصاویر،
-    فرهنگ و انتشار اخبار و اطلاعات محلی است.
-  </p>
-</div>
-
-<section id="about">
-  <h2 class="section-title">درباره روستای کمارسفلی</h2>
-
-  <div class="card">
-    <p>
-      کمارسفلی، روستایی با طبیعت و چشم‌اندازهای دیدنی است.
-      هدف این وب‌سایت معرفی بهتر روستا، ثبت تصاویر،
-      نگهداری خاطرات و به اشتراک گذاشتن اطلاعات
-      مربوط به این منطقه است.
-    </p>
-  </div>
-</section>
-
-<section id="nature">
-  <h2 class="section-title">📸 گالری تصاویر روستا</h2>
-
-  <div class="gallery">
-
-    <div class="card">
-      <a
-        href="./IMG_20260417_170604.jpg"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <img
-          src="./IMG_20260417_170604.jpg"
-          alt="چشم‌اندازی از روستای کمارسفلی"
-          loading="lazy"
-          decoding="async"
-        >
-      </a>
-
-      <p class="caption">
-        چشم‌اندازی از روستای کمارسفلی
+  <section class="hero" id="home">
+    <div>
+      <h2>به کمارسفلی خوش آمدید</h2>
+      <p>
+        اینجا گوشه‌ای از زیبایی‌های روستای کمارسفلی را می‌بینید؛
+        سرزمینی با طبیعت، خاطرات و مردمی دوست‌داشتنی.
       </p>
     </div>
+  </section>
 
-    <div class="card">
-      <a
-        href="./Screenshot_20261108-221331.png"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <img
-          src="./Screenshot_20261108-221331.png"
-          alt="تصویری از روستای کمارسفلی"
-          loading="lazy"
-          decoding="async"
-        >
-      </a>
+  <main class="container">
 
-      <p class="caption">
-        تصویری دیگر از کمارسفلی
+    <section class="section" id="about">
+      <h2>درباره روستای کمارسفلی</h2>
+      <p>
+        کمارسفلی یکی از روستاهای منطقه است که طبیعت و زندگی روستایی
+        بخشی از زیبایی‌های آن را تشکیل می‌دهد. در این وب‌سایت تلاش
+        می‌کنیم تصاویر، اطلاعات و خبرهای مربوط به روستا را گردآوری کنیم.
       </p>
-    </div>
+    </section>
 
-  </div>
-</section>
+    <section class="section" id="nature">
+      <h2>طبیعت و تصاویر روستا</h2>
+      <p>
+        تصاویری از روستای کمارسفلی را در این قسمت مشاهده می‌کنید.
+        برای دیدن تصویر در اندازه اصلی، روی آن بزنید.
+      </p>
 
-<section id="culture">
-  <h2 class="section-title">فرهنگ و زندگی روستایی</h2>
+      <div class="gallery">
 
-  <div class="card">
-    <p>
-      در این بخش می‌توانیم درباره آداب‌ورسوم،
-      زبان، خاطرات قدیمی، سنت‌ها و زندگی مردم
-      کمارسفلی مطالب بیشتری منتشر کنیم.
-    </p>
-  </div>
-</section>
+        <a href="./Screenshot_۲۰۲۶۱۱۰۸-۲۰۰۰۲۶.png"
+           target="_blank" rel="noopener noreferrer">
+          <img src="./Screenshot_۲۰۲۶۱۱۰۸-۲۰۰۰۲۶.png"
+               alt="تصویر روستای کمارسفلی"
+               loading="lazy">
+        </a>
 
-<section id="news">
-  <h2 class="section-title">📰 اخبار و اطلاعیه‌ها</h2>
+        <a href="./IMG_۲۰۲۶۰۴۱۷_۱۷۰۵۱۹.jpg"
+           target="_blank" rel="noopener noreferrer">
+          <img src="./IMG_۲۰۲۶۰۴۱۷_۱۷۰۵۱۹.jpg"
+               alt="طبیعت روستای کمارسفلی"
+               loading="lazy">
+        </a>
 
-  <div class="card">
-    <h3>به‌زودی...</h3>
+        <a href="./IMG_۲۰۲۶۰۴۱۷_۱۷۰۶۰۴.jpg"
+           target="_blank" rel="noopener noreferrer">
+          <img src="./IMG_۲۰۲۶۰۴۱۷_۱۷۰۶۰۴.jpg"
+               alt="چشم‌اندازی از روستا"
+               loading="lazy">
+        </a>
 
-    <p>
-      اخبار، رویدادها و اطلاعیه‌های محلی
-      در این قسمت منتشر خواهند شد.
-    </p>
-  </div>
-</section>
+        <a href="./Screenshot_۲۰۲۶۱۱۰۸-۲۲۱۳۳۱.png"
+           target="_blank" rel="noopener noreferrer">
+          <img src="./Screenshot_۲۰۲۶۱۱۰۸-۲۲۱۳۳۱.png"
+               alt="تصویری دیگر از روستای کمارسفلی"
+               loading="lazy">
+        </a>
 
-</main>
+      </div>
+    </section>
 
-<footer>
-  <p>🌿 وب‌سایت معرفی روستای کمارسفلی</p>
-  <p>ساخته‌شده با هدف معرفی روستا و طبیعت زیبای آن</p>
-  <p>© تمامی حقوق این وب‌سایت محفوظ است.</p>
-</footer>
+    <section class="section" id="culture">
+      <h2>فرهنگ و زندگی مردم</h2>
+      <p>
+        فرهنگ روستایی، آداب‌ورسوم، همکاری میان مردم و خاطرات
+        نسل‌های مختلف، بخش مهمی از هویت کمارسفلی هستند.
+      </p>
+    </section>
+
+    <section class="section" id="news">
+      <h2>اخبار و اطلاعیه‌ها</h2>
+
+      <div class="news-item">
+        <p>به‌زودی خبرها و اطلاعیه‌های مربوط به روستای کمارسفلی در این قسمت منتشر خواهند شد.</p>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <p>وب‌سایت روستای کمارسفلی</p>
+    <p>ساخته‌شده با علاقه به روستا ❤️</p>
+  </footer>
 
 </body>
 </html>
