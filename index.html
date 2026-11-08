@@ -1,14 +1,18 @@
+
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>روستای کمارسفلی | معرفی، تصاویر و اخبار</title>
 
-<meta name="description" content="وب‌سایت معرفی روستای کمارسفلی؛ تصاویر طبیعت، معرفی روستا، فرهنگ، تاریخ و اخبار محلی.">
+<meta name="description" content="وب‌سایت معرفی روستای کمارسفلی؛ آشنایی با طبیعت، فرهنگ، تاریخ، تصاویر و اخبار محلی.">
 
-<meta name="google-site-verification" content="Ij03cc5FN4_4pJhQKj1goHRRdwbEuYthmKFAuASVt6A" />
+<meta name="google-site-verification" content="Ij03cc5FN4_4pJhQKj1goHRRdwbEuYthmKFAuASVt6A">
+
+<meta name="theme-color" content="#174b35">
 
 <style>
 * {
@@ -56,6 +60,11 @@ nav a {
   margin: 0 9px;
   font-size: 14px;
   display: inline-block;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: #f3d58c;
 }
 
 .hero {
@@ -100,6 +109,17 @@ h2.section-title {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 18px;
+  align-items: start;
+}
+
+.gallery .card {
+  min-width: 0;
+}
+
+.gallery a {
+  display: block;
+  overflow: hidden;
+  border-radius: 14px;
 }
 
 .gallery img {
@@ -108,12 +128,17 @@ h2.section-title {
   object-fit: cover;
   border-radius: 14px;
   display: block;
+  transition: transform 0.3s ease;
+}
+
+.gallery a:hover img {
+  transform: scale(1.04);
 }
 
 .caption {
   text-align: center;
   color: #42634d;
-  margin-top: 8px;
+  margin: 8px 0 0;
 }
 
 footer {
@@ -129,9 +154,30 @@ footer p {
 }
 
 @media(max-width: 500px) {
-  header h1 { font-size: 24px; }
-  .hero h2 { font-size: 24px; }
-  nav a { margin: 0 5px; font-size: 12px; }
+  header h1 {
+    font-size: 24px;
+  }
+
+  .hero {
+    padding: 45px 16px;
+  }
+
+  .hero h2 {
+    font-size: 24px;
+  }
+
+  nav a {
+    margin: 0 5px;
+    font-size: 12px;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery img {
+    height: 220px;
+  }
 }
 </style>
 </head>
@@ -143,13 +189,15 @@ footer p {
   <p>وب‌سایت معرفی روستا</p>
 </header>
 
-<nav>
+<nav aria-label="منوی اصلی">
   <a href="#home">صفحه اصلی</a>
   <a href="#about">معرفی روستا</a>
   <a href="#nature">طبیعت</a>
   <a href="#culture">فرهنگ</a>
   <a href="#news">اخبار</a>
 </nav>
+
+<main>
 
 <div class="hero" id="home">
   <h2>به کمارسفلی خوش آمدید</h2>
@@ -162,6 +210,7 @@ footer p {
 
 <section id="about">
   <h2 class="section-title">درباره روستای کمارسفلی</h2>
+
   <div class="card">
     <p>
       کمارسفلی، روستایی با طبیعت و چشم‌اندازهای دیدنی است.
@@ -178,13 +227,41 @@ footer p {
   <div class="gallery">
 
     <div class="card">
-      <a href="./Screenshot_۲۰۲۶۱۱۰۸-۲۰۰۰۲۶.png" target="_blank">
+      <a
+        href="./IMG_20260417_170604.jpg"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <img
-          src="./Screenshot_۲۰۲۶۱۱۰۸-۲۰۰۰۲۶.png"
-          alt="منظره طبیعی روستای کمارسفلی"
+          src="./IMG_20260417_170604.jpg"
+          alt="چشم‌اندازی از روستای کمارسفلی"
+          loading="lazy"
+          decoding="async"
         >
       </a>
-      <p class="caption">منظره طبیعت و چشم‌انداز کمارسفلی</p>
+
+      <p class="caption">
+        چشم‌اندازی از روستای کمارسفلی
+      </p>
+    </div>
+
+    <div class="card">
+      <a
+        href="./Screenshot_20261108-221331.png"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          src="./Screenshot_20261108-221331.png"
+          alt="تصویری از روستای کمارسفلی"
+          loading="lazy"
+          decoding="async"
+        >
+      </a>
+
+      <p class="caption">
+        تصویری دیگر از کمارسفلی
+      </p>
     </div>
 
   </div>
@@ -192,6 +269,7 @@ footer p {
 
 <section id="culture">
   <h2 class="section-title">فرهنگ و زندگی روستایی</h2>
+
   <div class="card">
     <p>
       در این بخش می‌توانیم درباره آداب‌ورسوم،
@@ -203,8 +281,10 @@ footer p {
 
 <section id="news">
   <h2 class="section-title">📰 اخبار و اطلاعیه‌ها</h2>
+
   <div class="card">
     <h3>به‌زودی...</h3>
+
     <p>
       اخبار، رویدادها و اطلاعیه‌های محلی
       در این قسمت منتشر خواهند شد.
@@ -212,11 +292,13 @@ footer p {
   </div>
 </section>
 
+</main>
+
 <footer>
-  <p>🌿 وب‌سایت رسمی معرفی روستای کمارسفلی</p>
+  <p>🌿 وب‌سایت معرفی روستای کمارسفلی</p>
   <p>ساخته‌شده با هدف معرفی روستا و طبیعت زیبای آن</p>
   <p>© تمامی حقوق این وب‌سایت محفوظ است.</p>
 </footer>
 
 </body>
-    </html>
+</html>
