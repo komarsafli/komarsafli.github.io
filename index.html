@@ -1,101 +1,222 @@
-
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>روستای کمارسفلی | معرفی، تصاویر و اخبار</title>
+
+<meta name="description" content="وب‌سایت معرفی روستای کمارسفلی؛ تصاویر طبیعت، معرفی روستا، فرهنگ، تاریخ و اخبار محلی.">
 
 <meta name="google-site-verification" content="Ij03cc5FN4_4pJhQKj1goHRRdwbEuYthmKFAuASVt6A" />
 
-<title>کمارسفلی | معرفی روستای ما</title>
-<meta name="description" content="معرفی روستای کمار سفلی، اخبار، فرهنگ و تصاویر روستا">
-
 <style>
-*{box-sizing:border-box}
-body{margin:0;font-family:Tahoma,sans-serif;background:#f5f4ed;color:#26382d;line-height:2}
-header{background:#214b37;color:white;padding:18px;text-align:center}
-header h1{margin:0}
-nav{background:#315f46;padding:12px;text-align:center}
-nav a{color:white;text-decoration:none;margin:8px;font-size:14px}
-.hero{padding:85px 15px;text-align:center;color:white;background:linear-gradient(135deg,#173d2b,#75936c,#c6aa72)}
-.hero h2{font-size:38px;margin:0}
-.hero p{font-size:17px}
-.btn{display:inline-block;background:#e4bd70;color:#26382d;padding:10px 25px;border-radius:25px;text-decoration:none}
-section{padding:35px 18px;max-width:1000px;margin:auto}
-h2{color:#28583c}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:15px}
-.card{background:white;padding:20px;border-radius:15px;box-shadow:0 3px 12px #0001}
-.card h3{margin-top:0;color:#376c4b}
-.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
-.photo{background:#dce6d5;padding:35px;text-align:center;border-radius:12px;font-size:30px}
-footer{background:#214b37;color:white;text-align:center;padding:25px}
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Tahoma, Arial, sans-serif;
+  background: #f4f7f2;
+  color: #26382d;
+  line-height: 2;
+}
+
+header {
+  background: #174b35;
+  color: white;
+  padding: 25px 15px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 30px;
+}
+
+header p {
+  margin: 5px 0 0;
+  color: #dcebdc;
+}
+
+nav {
+  background: #246447;
+  padding: 12px 5px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 9px;
+  font-size: 14px;
+  display: inline-block;
+}
+
+.hero {
+  background: linear-gradient(135deg, #dcebd7, #b7d6b5);
+  text-align: center;
+  padding: 65px 20px;
+}
+
+.hero h2 {
+  color: #174b35;
+  font-size: 30px;
+  margin: 0 0 10px;
+}
+
+.hero p {
+  max-width: 650px;
+  margin: auto;
+}
+
+section {
+  max-width: 1050px;
+  margin: auto;
+  padding: 35px 18px;
+}
+
+h2.section-title {
+  color: #246447;
+  border-right: 5px solid #d4a84e;
+  padding-right: 12px;
+  margin-bottom: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 15px;
+  padding: 22px;
+  margin-bottom: 18px;
+  box-shadow: 0 3px 12px #0000000d;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 18px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 14px;
+  display: block;
+}
+
+.caption {
+  text-align: center;
+  color: #42634d;
+  margin-top: 8px;
+}
+
+footer {
+  background: #174b35;
+  color: white;
+  text-align: center;
+  padding: 25px 12px;
+  margin-top: 30px;
+}
+
+footer p {
+  margin: 5px;
+}
+
+@media(max-width: 500px) {
+  header h1 { font-size: 24px; }
+  .hero h2 { font-size: 24px; }
+  nav a { margin: 0 5px; font-size: 12px; }
+}
 </style>
 </head>
 
 <body>
+
 <header>
-<h1>🌿 کمارسفلی</h1>
-<p>روستای ما، هویت ما</p>
+  <h1>🌿 روستای کمارسفلی</h1>
+  <p>وب‌سایت معرفی روستا</p>
 </header>
 
 <nav>
-<a href="#about">معرفی روستا</a>
-<a href="#news">اخبار</a>
-<a href="#culture">فرهنگ</a>
-<a href="#gallery">گالری</a>
+  <a href="#home">صفحه اصلی</a>
+  <a href="#about">معرفی روستا</a>
+  <a href="#nature">طبیعت</a>
+  <a href="#culture">فرهنگ</a>
+  <a href="#news">اخبار</a>
 </nav>
 
-<div class="hero">
-<h2>به کمارسفلی خوش آمدید</h2>
-<p>خانه‌ای برای معرفی روستای زیبایمان</p>
-<a class="btn" href="#about">بیشتر بدانید</a>
+<div class="hero" id="home">
+  <h2>به کمارسفلی خوش آمدید</h2>
+  <p>
+    به وب‌سایت روستای کمارسفلی خوش آمدید.
+    اینجا فضایی برای معرفی روستا، نمایش تصاویر،
+    فرهنگ و انتشار اخبار و اطلاعات محلی است.
+  </p>
 </div>
 
 <section id="about">
-<h2>🏡 درباره روستا</h2>
-<div class="card">
-<p>به وب‌سایت رسمی معرفی روستای کمار سفلی خوش آمدید.</p>
-<p>در اینجا می‌توانید با طبیعت، تاریخچه، فرهنگ و زندگی مردم روستا آشنا شوید.</p>
-</div>
+  <h2 class="section-title">درباره روستای کمارسفلی</h2>
+  <div class="card">
+    <p>
+      کمارسفلی، روستایی با طبیعت و چشم‌اندازهای دیدنی است.
+      هدف این وب‌سایت معرفی بهتر روستا، ثبت تصاویر،
+      نگهداری خاطرات و به اشتراک گذاشتن اطلاعات
+      مربوط به این منطقه است.
+    </p>
+  </div>
 </section>
 
-<section id="news">
-<h2>📰 اخبار و اطلاعیه‌ها</h2>
-<div class="cards">
-<div class="card">
-<h3>اطلاعیه‌های روستا</h3>
-<p>اخبار و اطلاعیه‌های محلی در این بخش منتشر می‌شوند.</p>
-</div>
-<div class="card">
-<h3>رویدادها</h3>
-<p>برنامه‌ها و رویدادهای روستا را دنبال کنید.</p>
-</div>
-</div>
+<section id="nature">
+  <h2 class="section-title">📸 گالری تصاویر روستا</h2>
+
+  <div class="gallery">
+
+    <div class="card">
+      <a href="./Screenshot_۲۰۲۶۱۱۰۸-۲۰۰۰۲۶.png" target="_blank">
+        <img
+          src="./Screenshot_۲۰۲۶۱۱۰۸-۲۰۰۰۲۶.png"
+          alt="منظره طبیعی روستای کمارسفلی"
+        >
+      </a>
+      <p class="caption">منظره طبیعت و چشم‌انداز کمارسفلی</p>
+    </div>
+
+  </div>
 </section>
 
 <section id="culture">
-<h2>🌾 فرهنگ و آداب‌ورسوم</h2>
-<div class="card">
-<p>در این بخش رسم‌ها، سنت‌ها، خاطرات و فرهنگ مردم کمارسفلی معرفی خواهند شد.</p>
-</div>
+  <h2 class="section-title">فرهنگ و زندگی روستایی</h2>
+  <div class="card">
+    <p>
+      در این بخش می‌توانیم درباره آداب‌ورسوم،
+      زبان، خاطرات قدیمی، سنت‌ها و زندگی مردم
+      کمارسفلی مطالب بیشتری منتشر کنیم.
+    </p>
+  </div>
 </section>
 
-<section id="gallery">
-<h2>📷 گالری تصاویر</h2>
-<div class="gallery">
-<div class="photo">🏡</div>
-<div class="photo">🌳</div>
-<div class="photo">⛰️</div>
-<div class="photo">🌄</div>
-</div>
-<p>تصاویر واقعی روستا به‌زودی اضافه می‌شوند.</p>
+<section id="news">
+  <h2 class="section-title">📰 اخبار و اطلاعیه‌ها</h2>
+  <div class="card">
+    <h3>به‌زودی...</h3>
+    <p>
+      اخبار، رویدادها و اطلاعیه‌های محلی
+      در این قسمت منتشر خواهند شد.
+    </p>
+  </div>
 </section>
 
 <footer>
-<h3>کمارسفلی ❤️</h3>
-<p>روستای ما، هویت ما</p>
-<p>وب‌سایت معرفی روستای کمار سفلی</p>
+  <p>🌿 وب‌سایت رسمی معرفی روستای کمارسفلی</p>
+  <p>ساخته‌شده با هدف معرفی روستا و طبیعت زیبای آن</p>
+  <p>© تمامی حقوق این وب‌سایت محفوظ است.</p>
 </footer>
+
 </body>
-  </html>
-  
+</html>
