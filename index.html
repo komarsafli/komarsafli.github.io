@@ -2,494 +2,301 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#174b35">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#174b35">
+<meta name="google-site-verification" content="Ij03cc5FN4_4pJhQKj1goHRRdwbEuYthmKFAuASVt6A">
+<meta name="description" content="معرفی روستای کمارسفلی، طبیعت زیبا، فرهنگ، تصاویر و اخبار روستا">
+<title>روستای کمارسفلی | معرفی، تصاویر و اخبار</title>
 
-  <meta name="google-site-verification" content="Ij03cc5FN4_4pJhQKj1goHRRdwbEuYthmKFAuASVt6A">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Tahoma,Arial,sans-serif;background:#f4f8f5;color:#24352b;line-height:2}
+header{background:#174b35;color:white;padding:22px 15px;text-align:center}
+header h1{font-size:27px;margin-bottom:5px}
+header p{color:#d5eadb;font-size:14px}
+nav{background:#103b29;display:flex;justify-content:center;flex-wrap:wrap;gap:8px;padding:12px 8px;position:sticky;top:0;z-index:10}
+nav a{color:white;text-decoration:none;padding:7px 12px;border-radius:7px;font-size:13px}
+nav a:hover{background:#2d704e}
+.hero{min-height:300px;background:linear-gradient(135deg,#174b35,#47875c);color:white;display:flex;align-items:center;justify-content:center;text-align:center;padding:35px 18px}
+.hero h2{font-size:29px;margin-bottom:12px}
+.hero p{max-width:650px;margin:auto;color:#e5f3e9}
+.container{width:92%;max-width:1000px;margin:28px auto}
+.section{background:white;padding:23px;margin-bottom:22px;border-radius:14px;box-shadow:0 3px 14px rgba(0,0,0,.06)}
+.section h2{color:#174b35;font-size:21px;margin-bottom:13px;border-right:4px solid #4b9b69;padding-right:10px}
+.section p{font-size:15px;color:#46564b}
+.categories{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0}
+.category-btn{border:1px solid #174b35;background:white;color:#174b35;padding:8px 14px;border-radius:20px;font-family:inherit;cursor:pointer;font-size:13px}
+.category-btn.active,.category-btn:hover{background:#174b35;color:white}
+.gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px;margin-top:15px}
+.gallery-item{display:block;overflow:hidden;border-radius:11px;background:#e8eee9;text-decoration:none}
+.gallery-item img{width:100%;height:190px;object-fit:cover;display:block;transition:transform .3s}
+.gallery-item:hover img{transform:scale(1.04)}
+.photo-title{display:block;padding:7px 9px;color:#174b35;font-size:12px;background:#f7faf7}
+.gallery-info{color:#64746a;font-size:13px;margin-top:13px}
+.load-more{display:block;margin:22px auto 5px;background:#174b35;color:white;border:none;padding:11px 25px;border-radius:9px;font-family:inherit;font-size:14px;cursor:pointer}
+.load-more:disabled{display:none}
+.empty-message{display:none;text-align:center;color:#777;padding:20px}
+.news-item{padding:12px 0;border-bottom:1px solid #e8eee9}
+footer{background:#103b29;color:white;text-align:center;padding:22px 12px;font-size:13px;margin-top:35px}
 
-  <meta name="description" content="معرفی روستای کمارسفلی، طبیعت زیبا، فرهنگ، تصاویر و اخبار روستا">
+/* کارت مقاله */
+.article-card{display:block;text-decoration:none;color:inherit;background:#f8fbf8;border:1px solid #e5eee7;border-radius:12px;overflow:hidden;transition:.2s}
+.article-card:hover{transform:translateY(-3px);box-shadow:0 5px 15px rgba(0,0,0,.08)}
+.article-card img{width:100%;height:210px;object-fit:cover;display:block}
+.article-card-content{padding:14px}
+.article-card h3{color:#174b35;font-size:17px;margin-bottom:5px}
+.article-card p{font-size:13px;color:#64746a}
+.read-more{display:inline-block;color:#28764b;margin-top:8px;font-size:13px}
 
-  <title>روستای کمارسفلی | معرفی، تصاویر و اخبار</title>
+/* صفحه مقاله */
+.article-page{display:none}
+.article-page.active{display:block}
+.home-page.hidden{display:none}
+.article-cover{width:100%;max-height:420px;object-fit:cover;border-radius:12px;display:block;margin:15px 0}
+.article-text{font-size:15px;line-height:2.5;color:#46564b}
+.article-text p{margin-bottom:15px}
+.back-button{display:inline-block;background:#174b35;color:white;text-decoration:none;padding:9px 18px;border-radius:8px;font-size:14px;margin-bottom:15px}
+.back-button:hover{background:#286746}
+.article-meta{font-size:12px;color:#849188;margin:8px 0 15px}
 
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      font-family: Tahoma, Arial, sans-serif;
-      background: #f4f8f5;
-      color: #24352b;
-      line-height: 2;
-    }
-
-    header {
-      background: #174b35;
-      color: white;
-      padding: 22px 15px;
-      text-align: center;
-    }
-
-    header h1 {
-      font-size: 27px;
-      margin-bottom: 5px;
-    }
-
-    header p {
-      color: #d5eadb;
-      font-size: 14px;
-    }
-
-    nav {
-      background: #103b29;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 8px;
-      padding: 12px 8px;
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      padding: 7px 12px;
-      border-radius: 7px;
-      font-size: 13px;
-    }
-
-    nav a:hover {
-      background: #2d704e;
-    }
-
-    .hero {
-      min-height: 300px;
-      background: linear-gradient(135deg, #174b35, #47875c);
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 35px 18px;
-    }
-
-    .hero h2 {
-      font-size: 29px;
-      margin-bottom: 12px;
-    }
-
-    .hero p {
-      max-width: 650px;
-      margin: auto;
-      color: #e5f3e9;
-    }
-
-    .container {
-      width: 92%;
-      max-width: 1000px;
-      margin: 28px auto;
-    }
-
-    .section {
-      background: white;
-      padding: 23px;
-      margin-bottom: 22px;
-      border-radius: 14px;
-      box-shadow: 0 3px 14px rgba(0,0,0,0.06);
-    }
-
-    .section h2 {
-      color: #174b35;
-      font-size: 21px;
-      margin-bottom: 13px;
-      border-right: 4px solid #4b9b69;
-      padding-right: 10px;
-    }
-
-    .section p {
-      font-size: 15px;
-      color: #46564b;
-    }
-
-    /* دسته‌بندی گالری */
-
-    .categories {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin: 18px 0;
-    }
-
-    .category-btn {
-      border: 1px solid #174b35;
-      background: white;
-      color: #174b35;
-      padding: 8px 14px;
-      border-radius: 20px;
-      font-family: inherit;
-      cursor: pointer;
-      font-size: 13px;
-    }
-
-    .category-btn.active,
-    .category-btn:hover {
-      background: #174b35;
-      color: white;
-    }
-
-    /* گالری عکس‌ها */
-
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 13px;
-      margin-top: 15px;
-    }
-
-    .gallery-item {
-      display: block;
-      overflow: hidden;
-      border-radius: 11px;
-      background: #e8eee9;
-      text-decoration: none;
-    }
-
-    .gallery-item img {
-      width: 100%;
-      height: 190px;
-      object-fit: cover;
-      display: block;
-      transition: transform 0.3s;
-    }
-
-    .gallery-item:hover img {
-      transform: scale(1.04);
-    }
-
-    .photo-title {
-      display: block;
-      padding: 7px 9px;
-      color: #174b35;
-      font-size: 12px;
-      background: #f7faf7;
-    }
-
-    .gallery-info {
-      color: #64746a;
-      font-size: 13px;
-      margin-top: 13px;
-    }
-
-    .load-more {
-      display: block;
-      margin: 22px auto 5px;
-      background: #174b35;
-      color: white;
-      border: none;
-      padding: 11px 25px;
-      border-radius: 9px;
-      font-family: inherit;
-      font-size: 14px;
-      cursor: pointer;
-    }
-
-    .load-more:hover {
-      background: #286746;
-    }
-
-    .load-more:disabled {
-      display: none;
-    }
-
-    .empty-message {
-      display: none;
-      text-align: center;
-      color: #777;
-      padding: 20px;
-    }
-
-    .news-item {
-      padding: 12px 0;
-      border-bottom: 1px solid #e8eee9;
-    }
-
-    .news-item:last-child {
-      border-bottom: none;
-    }
-
-    footer {
-      background: #103b29;
-      color: white;
-      text-align: center;
-      padding: 22px 12px;
-      font-size: 13px;
-      margin-top: 35px;
-    }
-
-    @media (max-width: 700px) {
-      .gallery {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-
-      .gallery-item img {
-        height: 160px;
-      }
-    }
-
-    @media (max-width: 380px) {
-      .gallery {
-        grid-template-columns: 1fr;
-      }
-
-      .gallery-item img {
-        height: 210px;
-      }
-    }
-
-    @media (max-width: 480px) {
-      header h1 {
-        font-size: 23px;
-      }
-
-      .hero h2 {
-        font-size: 23px;
-      }
-
-      .section {
-        padding: 17px;
-      }
-    }
-  </style>
+@media(max-width:700px){
+.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}
+.gallery-item img{height:160px}
+}
+@media(max-width:380px){
+.gallery{grid-template-columns:1fr}
+.gallery-item img{height:210px}
+}
+@media(max-width:480px){
+header h1{font-size:23px}
+.hero h2{font-size:23px}
+.section{padding:17px}
+}
+</style>
 </head>
 
 <body>
 
-  <header>
-    <h1>روستای کمارسفلی</h1>
-    <p>طبیعت، فرهنگ و زندگی روستایی</p>
-  </header>
+<header>
+<h1>روستای کمارسفلی</h1>
+<p>طبیعت، فرهنگ و زندگی روستایی</p>
+</header>
 
-  <nav>
-    <a href="#home">صفحه اصلی</a>
-    <a href="#about">درباره روستا</a>
-    <a href="#nature">طبیعت و تصاویر</a>
-    <a href="#culture">فرهنگ</a>
-    <a href="#news">اخبار</a>
-  </nav>
+<nav>
+<a href="#home">صفحه اصلی</a>
+<a href="#about">درباره روستا</a>
+<a href="#nature">طبیعت و تصاویر</a>
+<a href="#articles">مقالات</a>
+<a href="#culture">فرهنگ</a>
+<a href="#news">اخبار</a>
+</nav>
 
-  <section class="hero" id="home">
-    <div>
-      <h2>به کمارسفلی خوش آمدید</h2>
-      <p>
-        اینجا گوشه‌ای از زیبایی‌های روستای کمارسفلی را می‌بینید؛
-        سرزمینی با طبیعت، خاطرات و مردمی دوست‌داشتنی.
-      </p>
-    </div>
-  </section>
+<!-- صفحه اصلی -->
+<div class="home-page" id="homePage">
 
-  <main class="container">
+<section class="hero" id="home">
+<div>
+<h2>به کمارسفلی خوش آمدید</h2>
+<p>اینجا گوشه‌ای از زیبایی‌های روستای کمارسفلی را می‌بینید؛ سرزمینی با طبیعت، خاطرات و مردمی دوست‌داشتنی.</p>
+</div>
+</section>
 
-    <section class="section" id="about">
-      <h2>درباره روستای کمارسفلی</h2>
-      <p>
-        کمارسفلی یکی از روستاهای منطقه است که طبیعت و زندگی روستایی
-        بخشی از زیبایی‌های آن را تشکیل می‌دهد. در این وب‌سایت تلاش
-        می‌کنیم تصاویر، اطلاعات و خبرهای مربوط به روستا را گردآوری کنیم.
-      </p>
-    </section>
+<main class="container">
 
-    <section class="section" id="nature">
-      <h2>گالری تصاویر روستای کمارسفلی</h2>
+<section class="section" id="about">
+<h2>درباره روستای کمارسفلی</h2>
+<p>
+کمارسفلی یکی از روستاهای منطقه است که طبیعت و زندگی روستایی
+بخشی از زیبایی‌های آن را تشکیل می‌دهد. در این وب‌سایت تلاش
+می‌کنیم تصاویر، اطلاعات و خبرهای مربوط به روستا را گردآوری کنیم.
+</p>
+</section>
 
-      <p>
-        تصاویر زیبای روستا را مشاهده کنید. برای دیدن عکس در اندازه اصلی
-        روی آن بزنید.
-      </p>
+<!-- مقالات -->
+<section class="section" id="articles">
+<h2>مقالات و مطالب روستا</h2>
+<p>در این بخش می‌توانید مطالب و مقاله‌های مربوط به کمارسفلی را بخوانید.</p>
 
-      <div class="categories">
-        <button class="category-btn active" data-category="all">همه تصاویر</button>
-        <button class="category-btn" data-category="nature">طبیعت</button>
-        <button class="category-btn" data-category="village">روستا</button>
-        <button class="category-btn" data-category="other">سایر تصاویر</button>
-      </div>
+<div style="margin-top:18px">
+<a class="article-card" href="#article-intro">
+<img src="./Screenshot_۲۰۲۶۱۱۰۸-۲۰۰۰۲۶.png" alt="روستای کمارسفلی">
+<div class="article-card-content">
+<h3>معرفی روستای کمارسفلی</h3>
+<p>آشنایی با روستای کمارسفلی، موقعیت جغرافیایی، طبیعت و ویژگی‌های آن.</p>
+<span class="read-more">مطالعه مقاله ←</span>
+</div>
+</a>
+</div>
+</section>
 
-      <div class="gallery" id="gallery"></div>
+<!-- گالری -->
+<section class="section" id="nature">
+<h2>گالری تصاویر روستای کمارسفلی</h2>
+<p>تصاویر زیبای روستا را مشاهده کنید. برای دیدن عکس در اندازه اصلی روی آن بزنید.</p>
 
-      <p class="gallery-info" id="galleryInfo"></p>
+<div class="categories">
+<button class="category-btn active" data-category="all">همه تصاویر</button>
+<button class="category-btn" data-category="nature">طبیعت</button>
+<button class="category-btn" data-category="village">روستا</button>
+<button class="category-btn" data-category="other">سایر تصاویر</button>
+</div>
 
-      <p class="empty-message" id="emptyMessage">
-        هنوز عکسی در این دسته‌بندی وجود ندارد.
-      </p>
+<div class="gallery" id="gallery"></div>
+<p class="gallery-info" id="galleryInfo"></p>
+<p class="empty-message" id="emptyMessage">هنوز عکسی در این دسته‌بندی وجود ندارد.</p>
+<button class="load-more" id="loadMore">نمایش عکس‌های بیشتر</button>
+</section>
 
-      <button class="load-more" id="loadMore">
-        نمایش عکس‌های بیشتر
-      </button>
+<section class="section" id="culture">
+<h2>فرهنگ و زندگی مردم</h2>
+<p>فرهنگ روستایی، آداب‌ورسوم، همکاری میان مردم و خاطرات نسل‌های مختلف، بخش مهمی از هویت کمارسفلی هستند.</p>
+</section>
 
-    </section>
+<section class="section" id="news">
+<h2>اخبار و اطلاعیه‌ها</h2>
+<div class="news-item">
+<p>به‌زودی خبرها و اطلاعیه‌های مربوط به روستای کمارسفلی در این قسمت منتشر خواهند شد.</p>
+</div>
+</section>
 
-    <section class="section" id="culture">
-      <h2>فرهنگ و زندگی مردم</h2>
-      <p>
-        فرهنگ روستایی، آداب‌ورسوم، همکاری میان مردم و خاطرات
-        نسل‌های مختلف، بخش مهمی از هویت کمارسفلی هستند.
-      </p>
-    </section>
+</main>
+</div>
 
-    <section class="section" id="news">
-      <h2>اخبار و اطلاعیه‌ها</h2>
+<!-- صفحه جداگانه مقاله -->
+<main class="container article-page" id="articlePage">
+<section class="section">
+<a href="#articles" class="back-button">← بازگشت به صفحه اصلی</a>
 
-      <div class="news-item">
-        <p>
-          به‌زودی خبرها و اطلاعیه‌های مربوط به روستای کمارسفلی
-          در این قسمت منتشر خواهند شد.
-        </p>
-      </div>
+<h2>معرفی روستای کمارسفلی</h2>
+<p class="article-meta">دسته‌بندی: معرفی روستا | زمان مطالعه: ۱ دقیقه</p>
 
-    </section>
+<img class="article-cover"
+src="./Screenshot_۲۰۲۶۱۱۰۸-۲۰۰۰۲۶.png"
+alt="تصویر روستای کمارسفلی">
 
-  </main>
+<div class="article-text">
+<p>
+روستای کمارسفلی یکی از روستاهای شهرستان جلفا در استان آذربایجان شرقی است. این روستا در بخش سیه‌رود و دهستان دیزمار غربی قرار دارد.
+</p>
 
-  <footer>
-    <p>وب‌سایت روستای کمارسفلی</p>
-    <p>ساخته‌شده با علاقه به روستا ❤️</p>
-  </footer>
+<p>
+کمارسفلی با طبیعت زیبا، چشم‌اندازهای دل‌نشین و فضای آرام روستایی، بخشی از زیبایی‌های منطقه جلفا را به نمایش می‌گذارد.
+</p>
 
-  <script>
-    // فهرست تصاویر گالری
-    // برای اضافه کردن عکس جدید، یک مورد جدید به این فهرست اضافه کن.
+<p>
+زندگی روستایی، فرهنگ مردم و خاطرات نسل‌های مختلف، هویت و ارزش این روستا را شکل داده‌اند.
+</p>
 
-    const photos = [
+<p>
+در این وب‌سایت تلاش می‌کنیم با انتشار تصاویر، مطالب و اطلاعات گوناگون، کمارسفلی را بیشتر معرفی کنیم و زیبایی‌ها و ویژگی‌های آن را به دیگران نشان دهیم.
+</p>
 
-      {
-        src: "Screenshot_۲۰۲۶۱۱۰۸-۲۰۰۰۲۶.png",
-        title: "تصویر روستای کمارسفلی",
-        category: "village"
-      },
+<p><strong>کمارسفلی؛ سرزمینی از طبیعت، خاطره و زندگی.</strong></p>
+</div>
 
-      {
-        src: "IMG_۲۰۲۶۰۴۱۷_۱۷۰۵۱۹.jpg",
-        title: "طبیعت روستا",
-        category: "nature"
-      },
+<a href="#articles" class="back-button">← بازگشت به صفحه اصلی</a>
+</section>
+</main>
 
-      {
-        src: "IMG_۲۰۲۶۰۴۱۷_۱۷۰۶۰۴.jpg",
-        title: "چشم‌اندازی از روستا",
-        category: "nature"
-      },
+<footer>
+<p>وب‌سایت روستای کمارسفلی</p>
+<p>ساخته‌شده با علاقه به روستا ❤️</p>
+</footer>
 
-      {
-        src: "Screenshot_۲۰۲۶۱۱۰۸-۲۲۱۳۳۱.png",
-        title: "تصویری دیگر از روستا",
-        category: "village"
-      },
+<script>
+// تصاویر گالری
+const photos = [
+{src:"Screenshot_۲۰۲۶۱۱۰۸-۲۰۰۰۲۶.png",title:"تصویر روستای کمارسفلی",category:"village"},
+{src:"IMG_۲۰۲۶۰۴۱۷_۱۷۰۵۱۹.jpg",title:"طبیعت روستا",category:"nature"},
+{src:"IMG_۲۰۲۶۰۴۱۷_۱۷۰۶۰۴.jpg",title:"چشم‌اندازی از روستا",category:"nature"},
+{src:"Screenshot_۲۰۲۶۱۱۰۸-۲۲۱۳۳۱.png",title:"تصویری دیگر از روستا",category:"village"},
+{src:"img_0002_qpr.jpg",title:"تصویر جدید روستا",category:"other"}
+];
 
-      {
-        src: "img_0002_qpr.jpg",
-        title: "تصویر جدید روستا",
-        category: "other"
-      }
+const gallery=document.getElementById("gallery");
+const loadMore=document.getElementById("loadMore");
+const galleryInfo=document.getElementById("galleryInfo");
+const emptyMessage=document.getElementById("emptyMessage");
+const categoryButtons=document.querySelectorAll(".category-btn");
 
-    ];
+const photosPerPage=12;
+let currentCategory="all";
+let visibleCount=photosPerPage;
 
-    const gallery = document.getElementById("gallery");
-    const loadMore = document.getElementById("loadMore");
-    const galleryInfo = document.getElementById("galleryInfo");
-    const emptyMessage = document.getElementById("emptyMessage");
-    const categoryButtons = document.querySelectorAll(".category-btn");
+function getFilteredPhotos(){
+if(currentCategory==="all") return photos;
+return photos.filter(photo=>photo.category===currentCategory);
+}
 
-    const photosPerPage = 12;
+function renderGallery(){
+const filteredPhotos=getFilteredPhotos();
+const visiblePhotos=filteredPhotos.slice(0,visibleCount);
+gallery.innerHTML="";
 
-    let currentCategory = "all";
-    let visibleCount = photosPerPage;
+visiblePhotos.forEach(photo=>{
+const link=document.createElement("a");
+link.className="gallery-item";
+link.href="./"+photo.src;
+link.target="_blank";
+link.rel="noopener noreferrer";
 
-    function getFilteredPhotos() {
-      if (currentCategory === "all") {
-        return photos;
-      }
+const img=document.createElement("img");
+img.src="./"+photo.src;
+img.alt=photo.title;
+img.loading="lazy";
+img.decoding="async";
 
-      return photos.filter(photo =>
-        photo.category === currentCategory
-      );
-    }
+const title=document.createElement("span");
+title.className="photo-title";
+title.textContent=photo.title;
 
-    function renderGallery() {
-      const filteredPhotos = getFilteredPhotos();
+link.appendChild(img);
+link.appendChild(title);
+gallery.appendChild(link);
+});
 
-      const visiblePhotos = filteredPhotos.slice(0, visibleCount);
+galleryInfo.textContent="نمایش "+visiblePhotos.length+" عکس از "+filteredPhotos.length+" عکس";
+emptyMessage.style.display=filteredPhotos.length===0?"block":"none";
+loadMore.disabled=visibleCount>=filteredPhotos.length;
+}
 
-      gallery.innerHTML = "";
+categoryButtons.forEach(button=>{
+button.addEventListener("click",()=>{
+categoryButtons.forEach(item=>item.classList.remove("active"));
+button.classList.add("active");
+currentCategory=button.dataset.category;
+visibleCount=photosPerPage;
+renderGallery();
+});
+});
 
-      visiblePhotos.forEach(photo => {
-        const link = document.createElement("a");
+loadMore.addEventListener("click",()=>{
+visibleCount+=photosPerPage;
+renderGallery();
+});
 
-        link.className = "gallery-item";
-        link.href = "./" + photo.src;
-        link.target = "_blank";
-        link.rel = "noopener noreferrer";
+// نمایش صفحه مقاله با کلیک روی کارت
+const homePage=document.getElementById("homePage");
+const articlePage=document.getElementById("articlePage");
 
-        const img = document.createElement("img");
+function changePage(){
+if(location.hash==="#article-intro"){
+homePage.classList.add("hidden");
+articlePage.classList.add("active");
+window.scrollTo(0,0);
+}else{
+homePage.classList.remove("hidden");
+articlePage.classList.remove("active");
+}
+}
 
-        img.src = "./" + photo.src;
-        img.alt = photo.title;
-        img.loading = "lazy";
-        img.decoding = "async";
+window.addEventListener("hashchange",changePage);
 
-        const title = document.createElement("span");
-
-        title.className = "photo-title";
-        title.textContent = photo.title;
-
-        link.appendChild(img);
-        link.appendChild(title);
-
-        gallery.appendChild(link);
-      });
-
-      galleryInfo.textContent =
-        "نمایش " + visiblePhotos.length +
-        " عکس از " + filteredPhotos.length + " عکس";
-
-      emptyMessage.style.display =
-        filteredPhotos.length === 0 ? "block" : "none";
-
-      loadMore.disabled =
-        visibleCount >= filteredPhotos.length;
-    }
-
-    categoryButtons.forEach(button => {
-      button.addEventListener("click", () => {
-
-        categoryButtons.forEach(item =>
-          item.classList.remove("active")
-        );
-
-        button.classList.add("active");
-
-        currentCategory = button.dataset.category;
-
-        visibleCount = photosPerPage;
-
-        renderGallery();
-      });
-    });
-
-    loadMore.addEventListener("click", () => {
-      visibleCount += photosPerPage;
-      renderGallery();
-    });
-
-    renderGallery();
-  </script>
+renderGallery();
+changePage();
+</script>
 
 </body>
 </html>
