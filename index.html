@@ -120,30 +120,101 @@
       color: #46564b;
     }
 
+    /* دسته‌بندی گالری */
+
+    .categories {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 18px 0;
+    }
+
+    .category-btn {
+      border: 1px solid #174b35;
+      background: white;
+      color: #174b35;
+      padding: 8px 14px;
+      border-radius: 20px;
+      font-family: inherit;
+      cursor: pointer;
+      font-size: 13px;
+    }
+
+    .category-btn.active,
+    .category-btn:hover {
+      background: #174b35;
+      color: white;
+    }
+
+    /* گالری عکس‌ها */
+
     .gallery {
       display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 12px;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 13px;
       margin-top: 15px;
     }
 
-    .gallery a {
+    .gallery-item {
       display: block;
       overflow: hidden;
       border-radius: 11px;
       background: #e8eee9;
+      text-decoration: none;
     }
 
-    .gallery img {
+    .gallery-item img {
       width: 100%;
-      height: 180px;
+      height: 190px;
       object-fit: cover;
       display: block;
       transition: transform 0.3s;
     }
 
-    .gallery a:hover img {
+    .gallery-item:hover img {
       transform: scale(1.04);
+    }
+
+    .photo-title {
+      display: block;
+      padding: 7px 9px;
+      color: #174b35;
+      font-size: 12px;
+      background: #f7faf7;
+    }
+
+    .gallery-info {
+      color: #64746a;
+      font-size: 13px;
+      margin-top: 13px;
+    }
+
+    .load-more {
+      display: block;
+      margin: 22px auto 5px;
+      background: #174b35;
+      color: white;
+      border: none;
+      padding: 11px 25px;
+      border-radius: 9px;
+      font-family: inherit;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .load-more:hover {
+      background: #286746;
+    }
+
+    .load-more:disabled {
+      display: none;
+    }
+
+    .empty-message {
+      display: none;
+      text-align: center;
+      color: #777;
+      padding: 20px;
     }
 
     .news-item {
@@ -164,6 +235,26 @@
       margin-top: 35px;
     }
 
+    @media (max-width: 700px) {
+      .gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .gallery-item img {
+        height: 160px;
+      }
+    }
+
+    @media (max-width: 380px) {
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery-item img {
+        height: 210px;
+      }
+    }
+
     @media (max-width: 480px) {
       header h1 {
         font-size: 23px;
@@ -175,14 +266,6 @@
 
       .section {
         padding: 17px;
-      }
-
-      .gallery {
-        grid-template-columns: 1fr;
-      }
-
-      .gallery img {
-        height: 210px;
       }
     }
   </style>
@@ -225,50 +308,32 @@
     </section>
 
     <section class="section" id="nature">
-      <h2>طبیعت و تصاویر روستا</h2>
+      <h2>گالری تصاویر روستای کمارسفلی</h2>
+
       <p>
-        تصاویری از روستای کمارسفلی را در این قسمت مشاهده می‌کنید.
-        برای دیدن تصویر در اندازه اصلی، روی آن بزنید.
+        تصاویر زیبای روستا را مشاهده کنید. برای دیدن عکس در اندازه اصلی
+        روی آن بزنید.
       </p>
 
-      <div class="gallery">
-
-        <a href="./Screenshot_۲۰۲۶۱۱۰۸-۲۰۰۰۲۶.png"
-           target="_blank" rel="noopener noreferrer">
-          <img src="./Screenshot_۲۰۲۶۱۱۰۸-۲۰۰۰۲۶.png"
-               alt="تصویر روستای کمارسفلی"
-               loading="lazy">
-        </a>
-
-        <a href="./IMG_۲۰۲۶۰۴۱۷_۱۷۰۵۱۹.jpg"
-           target="_blank" rel="noopener noreferrer">
-          <img src="./IMG_۲۰۲۶۰۴۱۷_۱۷۰۵۱۹.jpg"
-               alt="طبیعت روستای کمارسفلی"
-               loading="lazy">
-        </a>
-
-        <a href="./IMG_۲۰۲۶۰۴۱۷_۱۷۰۶۰۴.jpg"
-           target="_blank" rel="noopener noreferrer">
-          <img src="./IMG_۲۰۲۶۰۴۱۷_１７０６０４.jpg"
-               alt="چشم‌اندازی از روستا"
-               loading="lazy">
-        </a>
-
-        <a href="./Screenshot_۲۰۲۶۱۱۰۸-۲۲۱۳۳۱.png"
-           target="_blank" rel="noopener noreferrer">
-          <img src="./Screenshot_۲۰۲۶۱۱۰۸-۲۲۱３３１.png"
-               alt="تصویری دیگر از روستای کمارسفلی"
-               loading="lazy">
-        </a>
-
-        <a href="./img_0002_qpr.jpg"
-           target="_blank" rel="noopener noreferrer">
-          <img src="./img_0002_qpr.jpg"
-               alt="تصویری از روستای کمارسفلی"
-               loading="lazy">
-        </a>
-
+      <div class="categories">
+        <button class="category-btn active" data-category="all">همه تصاویر</button>
+        <button class="category-btn" data-category="nature">طبیعت</button>
+        <button class="category-btn" data-category="village">روستا</button>
+        <button class="category-btn" data-category="other">سایر تصاویر</button>
       </div>
+
+      <div class="gallery" id="gallery"></div>
+
+      <p class="gallery-info" id="galleryInfo"></p>
+
+      <p class="empty-message" id="emptyMessage">
+        هنوز عکسی در این دسته‌بندی وجود ندارد.
+      </p>
+
+      <button class="load-more" id="loadMore">
+        نمایش عکس‌های بیشتر
+      </button>
+
     </section>
 
     <section class="section" id="culture">
@@ -283,7 +348,10 @@
       <h2>اخبار و اطلاعیه‌ها</h2>
 
       <div class="news-item">
-        <p>به‌زودی خبرها و اطلاعیه‌های مربوط به روستای کمارسفلی در این قسمت منتشر خواهند شد.</p>
+        <p>
+          به‌زودی خبرها و اطلاعیه‌های مربوط به روستای کمارسفلی
+          در این قسمت منتشر خواهند شد.
+        </p>
       </div>
 
     </section>
@@ -294,6 +362,134 @@
     <p>وب‌سایت روستای کمارسفلی</p>
     <p>ساخته‌شده با علاقه به روستا ❤️</p>
   </footer>
+
+  <script>
+    // فهرست تصاویر گالری
+    // برای اضافه کردن عکس جدید، یک مورد جدید به این فهرست اضافه کن.
+
+    const photos = [
+
+      {
+        src: "Screenshot_۲۰۲۶۱۱۰۸-۲۰۰۰۲۶.png",
+        title: "تصویر روستای کمارسفلی",
+        category: "village"
+      },
+
+      {
+        src: "IMG_۲۰۲۶۰۴۱۷_۱۷۰۵۱۹.jpg",
+        title: "طبیعت روستا",
+        category: "nature"
+      },
+
+      {
+        src: "IMG_۲۰۲۶۰۴۱۷_۱۷۰۶۰۴.jpg",
+        title: "چشم‌اندازی از روستا",
+        category: "nature"
+      },
+
+      {
+        src: "Screenshot_۲۰۲۶۱۱۰۸-۲۲۱۳۳۱.png",
+        title: "تصویری دیگر از روستا",
+        category: "village"
+      },
+
+      {
+        src: "img_0002_qpr.jpg",
+        title: "تصویر جدید روستا",
+        category: "other"
+      }
+
+    ];
+
+    const gallery = document.getElementById("gallery");
+    const loadMore = document.getElementById("loadMore");
+    const galleryInfo = document.getElementById("galleryInfo");
+    const emptyMessage = document.getElementById("emptyMessage");
+    const categoryButtons = document.querySelectorAll(".category-btn");
+
+    const photosPerPage = 12;
+
+    let currentCategory = "all";
+    let visibleCount = photosPerPage;
+
+    function getFilteredPhotos() {
+      if (currentCategory === "all") {
+        return photos;
+      }
+
+      return photos.filter(photo =>
+        photo.category === currentCategory
+      );
+    }
+
+    function renderGallery() {
+      const filteredPhotos = getFilteredPhotos();
+
+      const visiblePhotos = filteredPhotos.slice(0, visibleCount);
+
+      gallery.innerHTML = "";
+
+      visiblePhotos.forEach(photo => {
+        const link = document.createElement("a");
+
+        link.className = "gallery-item";
+        link.href = "./" + photo.src;
+        link.target = "_blank";
+        link.rel = "noopener noreferrer";
+
+        const img = document.createElement("img");
+
+        img.src = "./" + photo.src;
+        img.alt = photo.title;
+        img.loading = "lazy";
+        img.decoding = "async";
+
+        const title = document.createElement("span");
+
+        title.className = "photo-title";
+        title.textContent = photo.title;
+
+        link.appendChild(img);
+        link.appendChild(title);
+
+        gallery.appendChild(link);
+      });
+
+      galleryInfo.textContent =
+        "نمایش " + visiblePhotos.length +
+        " عکس از " + filteredPhotos.length + " عکس";
+
+      emptyMessage.style.display =
+        filteredPhotos.length === 0 ? "block" : "none";
+
+      loadMore.disabled =
+        visibleCount >= filteredPhotos.length;
+    }
+
+    categoryButtons.forEach(button => {
+      button.addEventListener("click", () => {
+
+        categoryButtons.forEach(item =>
+          item.classList.remove("active")
+        );
+
+        button.classList.add("active");
+
+        currentCategory = button.dataset.category;
+
+        visibleCount = photosPerPage;
+
+        renderGallery();
+      });
+    });
+
+    loadMore.addEventListener("click", () => {
+      visibleCount += photosPerPage;
+      renderGallery();
+    });
+
+    renderGallery();
+  </script>
 
 </body>
 </html>
