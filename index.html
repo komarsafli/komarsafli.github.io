@@ -26,6 +26,116 @@ nav a:hover{background:#2d704e}
 .section{background:white;padding:23px;margin-bottom:22px;border-radius:14px;box-shadow:0 3px 14px rgba(0,0,0,.06)}
 .section h2{color:#174b35;font-size:21px;margin-bottom:13px;border-right:4px solid #4b9b69;padding-right:10px}
 .section p{font-size:15px;color:#46564b}
+
+/* تبلیغات پست بانک */
+.ad-section{
+background:linear-gradient(145deg,#ffffff,#edf7ef);
+border:1px solid #d8e9dc;
+border-radius:17px;
+padding:15px;
+margin-bottom:25px;
+box-shadow:0 5px 22px rgba(23,75,53,.10);
+overflow:hidden;
+}
+.ad-label{
+display:inline-block;
+background:#174b35;
+color:white;
+padding:4px 13px;
+border-radius:20px;
+font-size:11px;
+margin-bottom:12px;
+}
+.ad-heading{
+color:#174b35;
+font-size:21px;
+font-weight:bold;
+margin-bottom:8px;
+}
+.ad-description{
+color:#52675a;
+font-size:14px;
+line-height:2.2;
+margin-bottom:14px;
+}
+.ad-banner{
+display:block;
+width:100%;
+border-radius:13px;
+overflow:hidden;
+background:#e9f0e9;
+}
+.ad-banner img{
+width:100%;
+height:auto;
+display:block;
+}
+.ad-features{
+display:grid;
+grid-template-columns:repeat(2,minmax(0,1fr));
+gap:10px;
+margin:17px 0;
+}
+.ad-feature{
+background:white;
+border:1px solid #e2ece4;
+border-radius:10px;
+padding:10px;
+font-size:13px;
+color:#31523d;
+}
+.ad-feature span{
+color:#279353;
+font-weight:bold;
+margin-left:5px;
+}
+.ad-contact{
+background:#174b35;
+color:white;
+padding:17px;
+border-radius:13px;
+text-align:center;
+}
+.ad-contact h3{
+font-size:17px;
+margin-bottom:8px;
+}
+.ad-contact p{
+color:#e1f1e5;
+font-size:13px;
+margin-bottom:10px;
+}
+.ad-phone{
+display:inline-block;
+background:white;
+color:#174b35;
+text-decoration:none;
+font-size:20px;
+font-weight:bold;
+padding:7px 20px;
+border-radius:9px;
+direction:ltr;
+}
+.ad-social{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:9px;
+margin-top:13px;
+}
+.ad-social span{
+background:#286747;
+color:white;
+padding:5px 13px;
+border-radius:7px;
+font-size:12px;
+}
+.ad-address{
+font-size:12px;
+margin-top:12px;
+color:#e1f1e5;
+}
+
 .categories{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0}
 .category-btn{border:1px solid #174b35;background:white;color:#174b35;padding:8px 14px;border-radius:20px;font-family:inherit;cursor:pointer;font-size:13px}
 .category-btn.active,.category-btn:hover{background:#174b35;color:white}
@@ -39,7 +149,6 @@ nav a:hover{background:#2d704e}
 .load-more:disabled{display:none}
 .empty-message{display:none;text-align:center;color:#777;padding:20px}
 .news-item{padding:12px 0;border-bottom:1px solid #e8eee9}
-footer{background:#103b29;color:white;text-align:center;padding:22px 12px;font-size:13px;margin-top:35px}
 
 /* کارت مقاله */
 .article-card{display:block;text-decoration:none;color:inherit;background:#f8fbf8;border:1px solid #e5eee7;border-radius:12px;overflow:hidden;transition:.2s}
@@ -61,18 +170,23 @@ footer{background:#103b29;color:white;text-align:center;padding:22px 12px;font-s
 .back-button:hover{background:#286746}
 .article-meta{font-size:12px;color:#849188;margin:8px 0 15px}
 
+footer{background:#103b29;color:white;text-align:center;padding:22px 12px;font-size:13px;margin-top:35px}
+
 @media(max-width:700px){
 .gallery{grid-template-columns:repeat(2,minmax(0,1fr))}
 .gallery-item img{height:160px}
-}
-@media(max-width:380px){
-.gallery{grid-template-columns:1fr}
-.gallery-item img{height:210px}
 }
 @media(max-width:480px){
 header h1{font-size:23px}
 .hero h2{font-size:23px}
 .section{padding:17px}
+.ad-heading{font-size:18px}
+.ad-features{grid-template-columns:1fr}
+.ad-phone{font-size:18px}
+}
+@media(max-width:380px){
+.gallery{grid-template-columns:1fr}
+.gallery-item img{height:210px}
 }
 </style>
 </head>
@@ -93,7 +207,6 @@ header h1{font-size:23px}
 <a href="#news">اخبار</a>
 </nav>
 
-<!-- صفحه اصلی -->
 <div class="home-page" id="homePage">
 
 <section class="hero" id="home">
@@ -105,6 +218,52 @@ header h1{font-size:23px}
 
 <main class="container">
 
+<!-- تبلیغات و معرفی پست بانک -->
+<section class="ad-section" id="postbank">
+
+<span class="ad-label">معرفی خدمات بانکی</span>
+
+<h2 class="ad-heading">خدمات بانکی در کمارسفلی؛ نزدیک‌تر و آسان‌تر</h2>
+
+<p class="ad-description">
+برای آشنایی با خدمات باجه خدمات بانکی کمارسفلی، دریافت راهنمایی و اطلاع از مراحل افتتاح حساب آنلاین، می‌توانید با این باجه در ارتباط باشید.
+همچنین امکان مراجعه حضوری برای دریافت راهنمایی وجود دارد.
+</p>
+
+<a class="ad-banner" href="postbank-kamarsafli.png" target="_blank" rel="noopener noreferrer">
+<img
+src="./postbank-kamarsafli.png"
+alt="بنر معرفی باجه خدمات بانکی کمارسفلی">
+</a>
+
+<div class="ad-features">
+<div class="ad-feature"><span>✓</span> آموزش افتتاح حساب آنلاین</div>
+<div class="ad-feature"><span>✓</span> راهنمایی ثبت‌نام غیرحضوری</div>
+<div class="ad-feature"><span>✓</span> امکان مراجعه حضوری</div>
+<div class="ad-feature"><span>✓</span> پاسخ‌گویی و راهنمایی تلفنی</div>
+</div>
+
+<div class="ad-contact">
+<h3>برای دریافت راهنمایی با ما تماس بگیرید</h3>
+<p>از طریق تماس تلفنی یا شبکه‌های اجتماعی با باجه در ارتباط باشید.</p>
+
+<a class="ad-phone" href="tel:09147343374">09147343374</a>
+
+<div class="ad-social">
+<span>بله</span>
+<span>ایتا</span>
+<span>روبیکا</span>
+</div>
+
+<div class="ad-address">
+آدرس مراجعه حضوری: روستای کمارسفلی
+<br>
+باجه خدمات بانکی کمارسفلی | کد ۵۵۷۲۲
+</div>
+</div>
+
+</section>
+
 <section class="section" id="about">
 <h2>درباره روستای کمارسفلی</h2>
 <p>
@@ -114,7 +273,6 @@ header h1{font-size:23px}
 </p>
 </section>
 
-<!-- مقالات -->
 <section class="section" id="articles">
 <h2>مقالات و مطالب روستا</h2>
 <p>در این بخش می‌توانید مطالب و مقاله‌های مربوط به کمارسفلی را بخوانید.</p>
@@ -131,7 +289,6 @@ header h1{font-size:23px}
 </div>
 </section>
 
-<!-- گالری -->
 <section class="section" id="nature">
 <h2>گالری تصاویر روستای کمارسفلی</h2>
 <p>تصاویر زیبای روستا را مشاهده کنید. برای دیدن عکس در اندازه اصلی روی آن بزنید.</p>
@@ -164,7 +321,7 @@ header h1{font-size:23px}
 </main>
 </div>
 
-<!-- صفحه جداگانه مقاله -->
+<!-- صفحه مقاله -->
 <main class="container article-page" id="articlePage">
 <section class="section">
 <a href="#articles" class="back-button">← بازگشت به صفحه اصلی</a>
@@ -180,19 +337,15 @@ alt="تصویر روستای کمارسفلی">
 <p>
 روستای کمارسفلی یکی از روستاهای شهرستان جلفا در استان آذربایجان شرقی است. این روستا در بخش سیه‌رود و دهستان دیزمار غربی قرار دارد.
 </p>
-
 <p>
 کمارسفلی با طبیعت زیبا، چشم‌اندازهای دل‌نشین و فضای آرام روستایی، بخشی از زیبایی‌های منطقه جلفا را به نمایش می‌گذارد.
 </p>
-
 <p>
 زندگی روستایی، فرهنگ مردم و خاطرات نسل‌های مختلف، هویت و ارزش این روستا را شکل داده‌اند.
 </p>
-
 <p>
 در این وب‌سایت تلاش می‌کنیم با انتشار تصاویر، مطالب و اطلاعات گوناگون، کمارسفلی را بیشتر معرفی کنیم و زیبایی‌ها و ویژگی‌های آن را به دیگران نشان دهیم.
 </p>
-
 <p><strong>کمارسفلی؛ سرزمینی از طبیعت، خاطره و زندگی.</strong></p>
 </div>
 
@@ -206,7 +359,6 @@ alt="تصویر روستای کمارسفلی">
 </footer>
 
 <script>
-// تصاویر گالری
 const photos = [
 {src:"Screenshot_۲۰۲۶۱۱۰۸-۲۰۰۰۲۶.png",title:"تصویر روستای کمارسفلی",category:"village"},
 {src:"IMG_۲۰۲۶۰۴۱۷_۱۷۰۵۱۹.jpg",title:"طبیعت روستا",category:"nature"},
@@ -277,7 +429,6 @@ visibleCount+=photosPerPage;
 renderGallery();
 });
 
-// نمایش صفحه مقاله با کلیک روی کارت
 const homePage=document.getElementById("homePage");
 const articlePage=document.getElementById("articlePage");
 
